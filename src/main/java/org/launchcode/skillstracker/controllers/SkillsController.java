@@ -28,25 +28,19 @@ public class SkillsController {
                 "<label for='language1'>My favorite language:</label>" +
                 "<br>" +
                 "<select name='language1' id='language1'>" +
-                "<option value='Java'>Java</option>" +
-                "<option value='Javascript'>JavaScript</option>" +
-                "<option value='Python'>Python</option>" +
+                createMenuOptions() +
                 "</select>" +
                 "<br>" +
                 "<label for='language2'>My second favorite language:</label>" +
                 "<br>" +
                 "<select name='language2' id='language2'>" +
-                "<option value='Java'>Java</option>" +
-                "<option value='Javascript'>JavaScript</option>" +
-                "<option value='Python'>Python</option>" +
+                createMenuOptions() +
                 "</select>" +
                 "<br>" +
                 "<label for='language3'>My third favorite language:</label>" +
                 "<br>" +
                 "<select name='language3' id='language3'>" +
-                "<option value='Java'>Java</option>" +
-                "<option value='JavaScript'>JavaScript</option>" +
-                "<option value='Python'>Python</option>" +
+                createMenuOptions() +
                 "</select>" +
                 "<br>" +
                 "<input type='submit' value='Submit'>" +
@@ -62,5 +56,11 @@ public class SkillsController {
                 "<li>" + language2 + "</li>" +
                 "<li>" + language3 + "</li>" +
                 "</ol>";
+    }
+
+    public String createMenuOptions() {
+        return "<option value='Java'>Java</option>" +
+                "<option value='Javascript'>JavaScript</option>" +
+                "<option value='Python'>Python</option>";
     }
 }

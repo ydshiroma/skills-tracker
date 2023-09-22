@@ -53,7 +53,6 @@ public class SkillsController {
                 "</form>";
     }
 
-//    @RequestMapping(value = "/form", method = {RequestMethod.POST})
     @PostMapping("/form")
     @ResponseBody
     public String displayUserData(@RequestParam String name, String language1, String language2, String language3) {
